@@ -1,7 +1,7 @@
 {
   "name": "agent-passport-system-mcp",
   "version": "2.25.0",
-  "mcpName": "io.github.aeoess/agent-passport-mcp",
+  "mcpName": "io.github.agent-passport-system/agent-passport-mcp",
   "description": "MCP server for the Agent Passport System: enforcement infrastructure for the agent economy. 152 tools across the full protocol surface. Policy eval <2ms. Identity, delegation, reputation, enforcement, attestation, wallet binding, commerce.",
   "type": "module",
   "bin": {
@@ -44,9 +44,9 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aeoess/agent-passport-mcp.git"
+    "url": "git+https://github.com/agent-passport-system/agent-passport-mcp.git"
   },
-  "homepage": "https://github.com/aeoess/agent-passport-mcp",
+  "homepage": "https://github.com/agent-passport-system/agent-passport-mcp",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.27.1",
     "agent-passport-system": "6.0.1",

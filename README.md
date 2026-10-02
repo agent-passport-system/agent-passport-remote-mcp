@@ -29,7 +29,7 @@ All protocol modules exposed across identity, delegation, policy evaluation, val
 ## Self-Hosting
 
 ```bash
-git clone https://github.com/aeoess/agent-passport-remote-mcp.git
+git clone https://github.com/agent-passport-system/agent-passport-remote-mcp.git
 cd agent-passport-remote-mcp
 npm install && npm run build
 npm start
