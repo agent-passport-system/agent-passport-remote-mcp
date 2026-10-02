@@ -6,7 +6,7 @@
 
 import express from 'express'
 import cors from 'cors'
-import { randomUUID } from 'crypto'
+import { randomUUID, createHash, timingSafeEqual } from 'crypto'
 import { spawn, type ChildProcess } from 'child_process'
 import { createInterface } from 'readline'
 import { readFileSync, writeFileSync, existsSync } from 'fs'
@@ -226,6 +226,13 @@ setInterval(() => {
   }
 }, 60000)
 
+// Compare digests so the comparison takes the same time whatever the input length or contents.
+function apiKeyMatches(presented: string): boolean {
+  const a = createHash('sha256').update(presented).digest()
+  const b = createHash('sha256').update(API_KEY).digest()
+  return timingSafeEqual(a, b)
+}
+
 function authMiddleware(req: express.Request, res: express.Response, next: express.NextFunction) {
   if (!API_KEY) return next()
   const authHeader = req.headers.authorization
@@ -233,7 +240,7 @@ function authMiddleware(req: express.Request, res: express.Response, next: expre
     res.status(401).json({ error: 'Missing or invalid Authorization header' })
     return
   }
-  if (authHeader.slice(7) !== API_KEY) {
+  if (!apiKeyMatches(authHeader.slice(7))) {
     res.status(403).json({ error: 'Invalid API key' })
     return
   }
