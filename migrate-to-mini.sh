@@ -11,7 +11,7 @@ if [ -d "agent-passport-remote-mcp" ]; then
   echo "Repo exists, pulling..."
   cd agent-passport-remote-mcp && git pull --rebase
 else
-  git clone https://github.com/aeoess/agent-passport-remote-mcp.git
+  git clone https://github.com/agent-passport-system/agent-passport-remote-mcp.git
   cd agent-passport-remote-mcp
 fi
 npm install
