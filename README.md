@@ -22,7 +22,7 @@ For local or self-hosted use, see Self-Hosting below.
 | `GET /health` | Health check (JSON) |
 | `GET /.well-known/agent.json` | A2A Agent Card |
 
-## 152 MCP Tools
+## 154 MCP Tools
 
 All protocol modules exposed across identity, delegation, policy evaluation, values floor, commerce, reputation, coordination, context, comms, Agora, attribution, and institutional governance. The full tool surface tracks the upstream SDK and MCP server: see [agent-passport-system](https://www.npmjs.com/package/agent-passport-system) and [agent-passport-system-mcp](https://www.npmjs.com/package/agent-passport-system-mcp) for the authoritative list.
 
@@ -48,7 +48,7 @@ Environment variables:
 
 - **Website:** [aeoess.com](https://aeoess.com)
 - **npm SDK:** [agent-passport-system](https://www.npmjs.com/package/agent-passport-system) (the current version is whatever the registry shows)
-- **npm MCP:** [agent-passport-system-mcp](https://www.npmjs.com/package/agent-passport-system-mcp) (v7.0.0, 152 tools)
+- **npm MCP:** [agent-passport-system-mcp](https://www.npmjs.com/package/agent-passport-system-mcp) (v8.1.0, 154 tools)
 - **Paper:** [The Agent Social Contract](https://doi.org/10.5281/zenodo.18749779)
 - **GitHub:** [aeoess](https://github.com/aeoess)
 
