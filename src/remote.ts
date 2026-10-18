@@ -306,7 +306,7 @@ app.get('/stats', async (req, res) => {
 
 app.get('/.well-known/agent.json', (_req, res) => {
   res.json({
-    name: 'Agent Passport System', description: 'Cryptographic identity, delegation, policy enforcement, and governance for AI agents. 152 tools across the full governance distribution stack.',
+    name: 'Agent Passport System', description: 'Cryptographic identity, delegation, policy enforcement, and governance for AI agents. 154 tools across the full governance distribution stack.',
     url: 'https://mcp.aeoess.com', version: MCP_SERVER_VERSION,
     capabilities: { streaming: true, pushNotifications: false },
     defaultInputModes: ['application/json'], defaultOutputModes: ['application/json'],
@@ -432,7 +432,7 @@ app.get('/', (_req, res) => {
 h1{color:#60a5fa}code{background:#1e293b;padding:2px 8px;border-radius:4px;font-size:.9em}
 pre{background:#1e293b;padding:16px;border-radius:8px;overflow-x:auto;border-left:3px solid #60a5fa}
 a{color:#60a5fa}.badge{display:inline-block;background:#166534;color:#bbf7d0;padding:2px 10px;border-radius:12px;font-size:.85em}</style></head>
-<body><h1>Agent Passport System</h1><p><span class="badge">v${MCP_SERVER_VERSION} — 152 tools</span></p>
+<body><h1>Agent Passport System</h1><p><span class="badge">v${MCP_SERVER_VERSION} — 154 tools</span></p>
 <p>Remote MCP server for cryptographic agent identity, delegation, policy enforcement, and governance. 67 core + 32 v2 constitutional modules.</p>
 <h2>Connect</h2><p><b>SSE:</b> <code>https://mcp.aeoess.com/sse</code></p>
 <h3>Claude Desktop</h3><pre>{ "mcpServers": { "agent-passport": { "type": "sse", "url": "https://mcp.aeoess.com/sse" } } }</pre>
