@@ -2,7 +2,7 @@
   "name": "agent-passport-system-mcp",
   "version": "2.25.0",
   "mcpName": "io.github.agent-passport-system/agent-passport-mcp",
-  "description": "MCP server for the Agent Passport System: enforcement infrastructure for the agent economy. 152 tools across the full protocol surface. Policy eval <2ms. Identity, delegation, reputation, enforcement, attestation, wallet binding, commerce.",
+  "description": "MCP server for the Agent Passport System: enforcement infrastructure for the agent economy. 154 tools across the full protocol surface. Policy eval <2ms. Identity, delegation, reputation, enforcement, attestation, wallet binding, commerce.",
   "type": "module",
   "bin": {
     "agent-passport-system-mcp": "./build/bin.js",
